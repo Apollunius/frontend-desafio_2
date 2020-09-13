@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+body{
+    margin: 0;
+    background-color: #1D2226;
+}
+.header{
+    max-height: 4.5em;
+    background-color: #0F1C26;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    
+}
+.movies{
+    display: flex;
+    flex-direction: column;
+    max-width: 937px;
+    max-height: 62em;
+}
+.bag{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    justify-items: center;
+    width: 312px;
+    position: sticky;
+}
+.btnBag{
+    width: 312px;
+    height: 72px;
+    background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4;
+}
+.search{
+    display: flex;
+    background-color: #171B1E;
+    min-height: 3em;
+    min-width: 20em;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+.search > img{
+    align-self: center;
+
+}
+.search > input{
+    all: unset;
+    min-width: 20em;
+}
+.profile{
+    width: 3em;
+    border-radius: 8px;
+}
+.perfil{
+    width: 14em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0F1C26;
+    cursor: pointer;
+   
+}
+.desconto{
+    min-width: 63em;
+    background: linear-gradient(39.6deg, #EE82D0 0.8%, #FFC8F0 141.63%);
+}
+.desconto > img{
+    height: 100%;
+    
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+.cards{
+    height: 301px;
+    width: 168px;
+}
+.genre{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.genre > button{
+    min-width: 10em;
+    min-height: 2.5em;
+    border: 2px solid #E5E5E5;
+}
+.cupom{
+    background-color: #0B1217;
+}
+/* .cards{
+    background: url(./images/Rectangle\ 6.png);
+} */
+.desconto > span{
+    position: absolute;
+    font-family: 'Quantico', sans-serif;
+    font-size: 40px;
+    color: #0F0915;    
+    opacity: 0.8;
+}
+.money{
+    position: absolute;
+}
