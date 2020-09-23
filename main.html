@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <title>Movieflix</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <div style="display: flex;"><img src="./images/Arrow - Right 2.png" />
+            <div class="search"><input placeholder="Pesquise filmes..."><img src="./images/search.png"></div>
+        </div>
+        <a style="display: flex; cursor: pointer;"><img style="margin-right: 0.5em;" src="./images/Bookmark.png" /> Favoritos</a>
+        <a style="display: flex; cursor: pointer;"><img style="margin-right: 0.5em;" src="./images/Discount.png" /> Promoções</a>
+        <div class="perfil"><span>Bem vindo, thaucosta</span> <img class="profile" src="./images/profile.jpg" />
+
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div class="movies">
+                <div class="desconto">
+                    <div>
+                        <div class="t1">APROVEITE AGORA</div>
+                        <div style="display: flex; align-items: center; margin: 0 1.3em;"><img class="img1"
+                                src="./images/Ticket.png" /><span style="margin-left: 0.5em;">CUPOM: HTMLNAOELINGUAGEM
+                            </span></div>
+                    </div>
+                    <div>
+                        <div class="t2">FINALIZA EM:</div>
+                        <div style="display: flex; align-items: center; margin: 0 2.8em"> <img class="img2"
+                                src="./images/Time_Square.png"> <span class="timer">00:<span
+                                    class="count"></span></span></div>
+                    </div>
+                </div>
+                <div class="topmovies">
+                    <h2>Top Filmes</h2>
+                    <div class="cards">
+
+                    </div>
+                </div>
+                <div class="allmovies">
+                    <h2>Filmes</h2>
+                    <div class="genre">
+                        <button class="btnGenre">Todos</button>
+                        <button class="btnGenre">Ação</button>
+                        <button class="btnGenre">Romance</button>
+                        <button class="btnGenre">Ficção Científica</button>
+                        <button class="btnGenre">Terror</button>
+                    </div>
+                    <!-- <div class="cards">
+
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <div style="height: 250vh;">
+            <div class="bag">
+                <a class="headBag"><img src="./images/Bag.png" /> Sacola</a>
+                <h2>A Sacola está vazia</h2>
+                <h4>Adicione filmes agora</h3>
+                    <img src="./images/Social Media.png" />
+                    <div style="align-self: flex-start; margin: 0 0 1em 1em;">Insira seu cupom<br>
+                        <div class="boxdesconto"><input placeholder="Cupom de Desconto" class="cupom" /><img
+                                src="./images/Ticket.png" /></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

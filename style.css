@@ -13,12 +13,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    min-width: 30em;
 }
 .content{
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
-    
+        
 }
 .movies{
     display: flex;
@@ -26,19 +27,49 @@ body{
     max-width: 937px;
     max-height: 62em;
 }
+.allmovies > h2{
+    margin: 0.5em 0 1em 0;
+}
 .bag{
     display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
     justify-items: center;
+    align-items: center;
     width: 312px;
     position: sticky;
+    top: 2.5em;
 }
-.btnBag{
+.boxdesconto{
+        display: flex;
+        background-color: #0B1217;
+        min-height: 3em;
+        min-width: 17.5em;
+        justify-content: space-between;
+        padding-left: 1em;
+        align-self: center;
+        padding-right: 0.5em;
+}
+.boxdesconto > input{
+    all: unset;
+    min-width: 15em;
+
+}
+.headBag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 312px;
     height: 72px;
     background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4;
+    font-size: 24px;
+}
+.topmovies > h2{
+    margin-bottom: 1em;
+}
+img{
+    align-self: center;
 }
 .search{
     display: flex;
@@ -47,9 +78,11 @@ body{
     min-width: 20em;
     justify-content: space-between;
     padding-left: 1em;
+    align-self: center;
 }
 .search > img{
     align-self: center;
+    padding-right: 1em;
 
 }
 .search > input{
@@ -66,47 +99,132 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-button{
+.genre{
+    margin-bottom: 1em;
+}
+.genre > button{
     all: unset;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #0F1C26;
     cursor: pointer;
+    min-width: 165px;
+    min-height: 2.5em;
+    background: rgba(225, 131, 200, 0.2);
+    border: 2px solid #E183C8;
+    color: #E183C8;
    
 }
+.genre > button:hover{
+    background-color: #1D2226;
+    transition: 450ms;
+}
+.genre > button:focus{
+    background-color: #1D2226;
+    border: 2px solid #A785ED;
+    color: #A785ED;
+}
 .desconto{
-    min-width: 63em;
-    background: linear-gradient(39.6deg, #EE82D0 0.8%, #FFC8F0 141.63%);
-}
-.desconto > img{
-    height: 100%;
-    
-}
-.card{
     display: flex;
-    justify-content: space-between;
+    min-width: 58.5em;
+    background: url("./images/promotion_count_down.svg");
+    min-height: 10em;
+    margin-bottom: 2em;;
+ 
+}
+.desconto div span{
+    font-size: 16px;
+    color: #0F0915;
+    font-family: Quantico;
+}
+.t2{
+    font-size: 24px;
+    margin: 2em 0 1.4em 2em ;
+    font-family: Quantico;
+    color: #0F0915;
+}
+.t1{
+    font-size: 40px;
+    margin: 1em 0 0.5em 0.5em ;
+    font-family: Quantico;
+    color: #0F0915;
+}
+.img1{
+    background: linear-gradient(47.73deg, #EE82D0 16.88%, #F8ACE3 66.1%, #FFC8F0 88.64%);
+    box-shadow: 0px 3.63636px 8.72727px -1.45455px rgba(248, 172, 227, 0.2); 
+    border-radius: 1em; 
+    padding: 0.3em;
+}
+.img2{
+    background: linear-gradient(231.76deg, #E5DBFB -9.49%, #B395F3 112.07%); 
+    border-radius: 1em; 
+    padding: 0.5em;
+}
+.timer{
+    margin-left: 0.5em;
 }
 .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 58.1em;
+}
+.card{
+    position: relative;
     height: 301px;
     width: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5em; 
+    background-size: cover;
+    background-position: center;
+    
+}
+.shadow{
+    position:absolute;
+    height: 301px;
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5em; 
+    background: rgba(0,0,0,0.5);
+}
+.star1{
+    margin: 0.5em
+}
+.info{
+    display: flex; 
+    justify-content: space-between;
+}
+.title{
+    margin: 0.5em 0 0.5em 0.6em;
+    font-weight: bold;
+    font-size: 16px;
+}
+.star2{
+    margin: 0.5em 0.5em 0.5em 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+.star2 > span{
+    color: #FBCD6E; 
+    font-size: 12px;
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+.price{
+    
 }
 .genre{
     display: flex;
-    justify-content: space-between;
-    
-}
-.genre > button{
-    min-width: 10em;
-    min-height: 2.5em;
-    border: 2px solid #E5E5E5;
+    justify-content: space-between;   
 }
 .cupom{
     background-color: #0B1217;
 }
-/* .cards{
-    background: url(./images/Rectangle\ 6.png);
-} */
+
 .desconto > span{
     position: absolute;
     font-family: 'Quantico', sans-serif;
@@ -116,4 +234,54 @@ button{
 }
 .money{
     position: absolute;
+    left: 45em;
+    top: -2em;
+    
+}
+.btnPrice{
+    all: unset;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+    background: url("./images/Rectangle\ 10.png");
+    width: 85%; 
+    margin: 0 50% 1em 5.5%;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+
+/* css do formulário */
+
+.dados{
+    background: #171B1E;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+label > input{
+    all: unset;
+    width: 328px;
+    height: 40px;
+    background: #0B1217;
+    margin-right: 5em;
+
+}
+label{
+    width: 20em;
+    margin: 0 2em 2em 2.5em
+
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50em;
+    
+}
+.dados > h1{
+    margin: 1em;
 }
